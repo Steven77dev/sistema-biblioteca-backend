@@ -4,8 +4,8 @@ import com.growby.biblioteca.model.entity.Autor;
 import com.growby.biblioteca.model.entity.Libro;
 import com.growby.biblioteca.repository.AutorRepository;
 import com.growby.biblioteca.repository.LibroRepository;
-import com.growby.biblioteca.utils.Response;
 import com.growby.biblioteca.utils.Constante;
+import com.growby.biblioteca.utils.Response;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -31,7 +31,7 @@ public class LibroService {
     public Response crearLibro(Libro libro) {
         if(libro.getIdAutor()==null)
             return Response.error("No ha especificado autor");
-
+        libro.setEstado("Disponible");
         Libro registro = libroRepository.save(libro);
 
         if( registro.getId()>0)
@@ -79,7 +79,6 @@ public class LibroService {
                     libro.setIdAutor(libroActualizado.getIdAutor());
                     libro.setIsbn(libroActualizado.getIsbn());
                     libro.setFechaPublicacion(libroActualizado.getFechaPublicacion());
-                    libro.setEstado(libroActualizado.getEstado());
                     libroRepository.save(libro);
                     return Response.exito(Constante.MENSAJE_EXITO, null);
                 })

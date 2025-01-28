@@ -73,7 +73,7 @@ public class PrestamoService {
 
     public Response finalizarPrestamo(Long id) {
         Optional<Prestamo> prestamo = prestamoRepository.findById(id);
-        if(!prestamo.isPresent())
+        if(prestamo.isEmpty())
             Response.error("Préstamo no encontrado");
 
         prestamo.get().setEstado("Finalizado");

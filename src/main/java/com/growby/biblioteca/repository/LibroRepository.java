@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface LibroRepository extends JpaRepository<Libro, Long> {
-    //List<Libro> findByEstado(String estado);
 }
