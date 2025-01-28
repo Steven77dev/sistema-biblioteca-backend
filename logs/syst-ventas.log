@@ -1,0 +1,20 @@
+25-01-2025 11:32:46.153 [http-nio-9098-exec-8] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:32:47.900 [http-nio-9098-exec-9] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /api-docs
+25-01-2025 11:32:48.008 [http-nio-9098-exec-10] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:33:01.931 [http-nio-9098-exec-1] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /swagger-ui/api-docs
+25-01-2025 11:33:02.076 [http-nio-9098-exec-2] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:33:04.799 [http-nio-9098-exec-3] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /swagger-ui/api-docs
+25-01-2025 11:33:04.911 [http-nio-9098-exec-4] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:33:09.144 [http-nio-9098-exec-5] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /swagger-ui/ui.html
+25-01-2025 11:33:09.298 [http-nio-9098-exec-6] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:33:24.134 [http-nio-9098-exec-7] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /swagger-ui/index.html
+25-01-2025 11:33:24.361 [http-nio-9098-exec-8] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:33:25.936 [http-nio-9098-exec-9] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /swagger-ui/index.html
+25-01-2025 11:33:26.063 [http-nio-9098-exec-10] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:33:42.690 [http-nio-9098-exec-1] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /swagger/swagger-ui,htmk
+25-01-2025 11:33:42.845 [http-nio-9098-exec-2] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:33:47.063 [http-nio-9098-exec-3] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /swagger/swagger-ui.html
+25-01-2025 11:33:47.244 [http-nio-9098-exec-4] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:34:01.854 [http-nio-9098-exec-5] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /swagger-ui.html
+25-01-2025 11:34:02.026 [http-nio-9098-exec-6] WARN  [DispatcherServlet.java:1301] o.s.web.servlet.PageNotFound.noHandlerFound - No mapping for GET /favicon.ico
+25-01-2025 11:36:16.430 [SpringApplicationShutdownHook] INFO  [AbstractEntityManagerFactoryBean.java:650] o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
