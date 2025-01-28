@@ -47,3 +47,7 @@
 28-01-2025 00:15:16.689 [http-nio-9098-exec-6] INFO  [ControllerAspect.java:24] c.g.biblioteca.aop.ControllerAspect.around - Fin llamada a método: listarPrestamos en el controlador: PrestamoController
 28-01-2025 00:15:16.689 [http-nio-9098-exec-5] INFO  [ControllerAspect.java:24] c.g.biblioteca.aop.ControllerAspect.around - Fin llamada a método: listarLibros en el controlador: LibroController
 28-01-2025 00:15:16.693 [http-nio-9098-exec-7] INFO  [ControllerAspect.java:24] c.g.biblioteca.aop.ControllerAspect.around - Fin llamada a método: listarAutores en el controlador: AutorController
+28-01-2025 00:19:59.459 [http-nio-9098-exec-1] INFO  [ControllerAspect.java:21] c.g.biblioteca.aop.ControllerAspect.around - Inicia llamada a método: listarLibrosPaginado en el controlador: LibroController con parametros: [0, 10]
+28-01-2025 00:19:59.599 [http-nio-9098-exec-1] INFO  [ControllerAspect.java:24] c.g.biblioteca.aop.ControllerAspect.around - Fin llamada a método: listarLibrosPaginado en el controlador: LibroController
+28-01-2025 00:33:13.300 [http-nio-9098-exec-3] INFO  [ControllerAspect.java:21] c.g.biblioteca.aop.ControllerAspect.around - Inicia llamada a método: listarAutores en el controlador: AutorController con parametros: []
+28-01-2025 00:33:13.304 [http-nio-9098-exec-3] INFO  [ControllerAspect.java:24] c.g.biblioteca.aop.ControllerAspect.around - Fin llamada a método: listarAutores en el controlador: AutorController

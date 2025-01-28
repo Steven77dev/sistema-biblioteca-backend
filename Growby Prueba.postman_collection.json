@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "c5b055f9-5219-424d-b077-cbdf1c6785cf",
+		"name": "Growby Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Libros",
+			"item": [
+				{
+					"name": "Crear Libro",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"titulo\": \"Ejemplo de Libro\",\n  \"idAutor\": 2,\n  \"isbn\": \"1234567890123\",\n  \"fechaPublicacion\": \"2025-01-01\",\n  \"estado\": \"Disponible\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/libros",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"libros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Libros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/libros",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"libros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Libro",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"titulo\": \"Libro Actualizado\",\n  \"idAutor\": \"2\",\n  \"isbn\": \"1234567890123\",\n  \"fechaPublicacion\": \"2025-01-01\",\n  \"estado\": \"No disponible\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/libros/6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"libros",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Libro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/libros/3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"libros",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener libro",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/libros/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"libros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Disponibilidad libro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/libros/disponibilidadLibro/2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"libros",
+								"disponibilidadLibro",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Libros Paginado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/libros",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"libros"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autores",
+			"item": [
+				{
+					"name": "Crear Autor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Autor Ejemplo\",\n  \"nacionalidad\": \"Peruana\",\n  \"fechaNacimiento\": \"1970-01-01\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/autores",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Autores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/autores",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Autor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Autor Actualizado\",\n  \"nacionalidad\": \"Chilena\",\n  \"fechaNacimiento\": \"1980-01-01\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/autores/3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"autores",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Autor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/autores/3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"autores",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Préstamos",
+			"item": [
+				{
+					"name": "Crear Préstamo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fechaPrestamo\": \"2025-01-15\",\n  \"estado\": \"ACTIVO\",\n  \"idLibro\": 2\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/prestamos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"prestamos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Préstamos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/prestamos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"prestamos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Préstamos por Libro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/prestamos/libro/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"prestamos",
+								"libro",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Finalizar Préstamo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/prestamos/finalizar/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"prestamos",
+								"finalizar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:9098/api"
+		}
+	]
+}
