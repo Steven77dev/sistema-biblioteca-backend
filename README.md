@@ -50,5 +50,12 @@ mvn spring-boot:run
 ```
 El backend estará disponible en: http://localhost:9098.
 
+### Base de datos
+Se adjunta la base de datos, el archivo data.sql, se pone como dos registros de ejemplo en Libro y Autor. 
+
+### Excepciones Globales
+Para poder mostrar de ejemplo las excepciones globales se ha dejado que cuando hago una primera y segunda inserción en esas tablas, se maneje un error generico en el *frontend*, pero se captura en el log a mejor detalle en el *backend*.
+Desde el tercer registro con esas tablas podrán hacer su inserción sin problemas.
+
 ### Pruebas con Postman
 En el repositorio también se encuentra la colección de los endpoints que podrán ser exportados por Postman para las pruebas, el archivo es **Growby Prueba.postman_collection.json**
